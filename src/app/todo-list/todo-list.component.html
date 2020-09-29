@@ -1,0 +1,7 @@
+<input type="text" #newTodo/>
+<button (click)="addTodo(newTodo.value)">Add</button>
+<h4>MY TODOS</h4>
+<p>
+    <li *ngFor="let td of toDo">{{ td }}</li>
+</p>
+<p>Total number of TODOS: {{ count }}</p>
